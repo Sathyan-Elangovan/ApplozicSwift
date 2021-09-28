@@ -8,6 +8,7 @@
 
 import ApplozicCore
 import Foundation
+import CoreLocation
 import MapKit
 #if canImport(RichMessageKit)
     import RichMessageKit
