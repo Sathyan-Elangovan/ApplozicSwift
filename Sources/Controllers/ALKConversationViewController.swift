@@ -1931,7 +1931,11 @@ extension ALKConversationViewController: ALKConversationViewModelDelegate {
         let indexSet = IndexSet(integersIn: oldCount ..< newCount)
 
         tableView.beginUpdates()
-        tableView.insertSections(indexSet, with: .automatic)
+        tableView.reloadSections(indexSet, with: .none)
+        if tableView.numberOfSections < self.numberOfSections(in: tableView) {
+            let toAddIndexSet = IndexSet(integersIn: tableView.numberOfSections ..< self.numberOfSections(in: tableView))
+            tableView.insertSections(toAddIndexSet, with: .automatic)
+        }
         tableView.endUpdates()
     }
 
