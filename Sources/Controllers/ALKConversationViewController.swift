@@ -1923,7 +1923,7 @@ extension ALKConversationViewController: ALKConversationViewModelDelegate {
     func updateTableView() {
         let oldCount = tableView.numberOfSections
         let newCount = viewModel.numberOfSections()
-        guard newCount >= oldCount else {
+        guard newCount > oldCount else {
             tableView.reloadData()
             print("😱Tableview shouldn't have more number of sections than viewModel😱")
             return
