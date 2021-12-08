@@ -4,7 +4,7 @@ The changelog for [ApplozicSwift](https://github.com/AppLozic/ApplozicSwift). Al
 
 
 ## [Unreleased]
-
+- Fixed Update Tableview Crash on new message arrival
 ## [6.4.0] - 2021-09-28
 
 ### Project
