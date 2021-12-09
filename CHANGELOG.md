@@ -6,6 +6,7 @@ The changelog for [ApplozicSwift](https://github.com/AppLozic/ApplozicSwift). Al
 ## [Unreleased]
 
 - Added support for text areas in rich message forms
+- Added support for sending chat widget events to User.
 
 ## [6.4.0] - 2021-09-28
 
